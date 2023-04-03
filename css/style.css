@@ -1,0 +1,141 @@
+.logo{
+    width: 100px;
+    height: 110px;
+    margin: 50px auto;
+}
+
+.menu{
+    background-color: #005891;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin: 50px 0;
+
+
+    
+}
+.menu a{
+    color:white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.menu a:hover{  /*의사(pseudo-class)선택자*/
+    color: #fcff00;
+}
+
+.hero_img{
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+    margin: 50px 0;
+}
+.title h1{
+    font-size: 22px;
+}
+.title p{
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+}
+.clips{
+    width: 650px;
+    margin: 0 auto;
+    font-size: 0;
+    display: flex;
+}
+.clip:nth-child(1){/*2개의 clip이 있음, 그중 첫번째 clip*/
+    margin-right: 50px;
+}
+.clip h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.clip h2, .clip p{
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: center;
+}
+.social_media{
+    text-align: center;
+    margin: 30px;
+}
+.social_media a{
+    text-decoration: none;
+    margin-right: 15x;
+}
+.social_media a:nth-child(4){
+    margin-right: 0;
+}
+.contact{
+    text-align: center;
+}
+.contact h2{
+    font-size: 15px;
+    color: #005891;
+    text-transform: uppercase;
+    /*텍스트-변형: lowecase , uppercase, capitalize*/
+}
+.contact p{
+    font-weight: bold;
+    font-size: 30px;
+    color: #005891;
+}
+hr{
+    margin: 50px 0;
+    height: 1px;
+    background-color: #005891;
+    border: 0; /*테두리 없음*/
+}
+.info{
+    text-align: center;
+    margin: 30px;
+}
+.info p:nth-child(1){
+    font-size: 13px;
+    margin: 10px;
+}
+.info p:nth-child(2){
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+/*media query*/
+@media screen and (max-width: 360px) {
+    .menu{
+        margin: 30px 0 20px 0;
+    }
+    .hero_img{
+        width: 100%;
+        height: auto;
+    }
+    .hero_img img{
+        width: 100%;
+    }
+    
+
+    .clips{
+        width: 300px; /*최대-넓이 : 300px, 300px 미만 폭에서는 100% 크기*/
+        flex-direction: column; /*플렉스-방향*/
+    }
+    .clip:nth-child(2){
+        margin-left: 0;
+    }
+    hr{
+        margin: 30px 0 0 0;
+    }
+    .info{
+        background-color: #005891;
+    }
+    .info{
+        background-color: #005891;
+        color: white;
+        padding: 30px 0;
+    }
+
+}
